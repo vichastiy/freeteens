@@ -8,11 +8,10 @@
 <link href="index.css" rel="stylesheet">
 </head>
 <body>
-<div id="space"><br></div>
 <div id="container">
-<div id="wb_Image1" style="position:absolute;left:0px;top:104px;width:802px;height:403px;z-index:0;">
+<div id="wb_Image1" style="position:absolute;left:3px;top:176px;width:802px;height:403px;z-index:0;">
 <img src="images/xvideo.png" id="Image1" alt="" width="802" height="404"></div>
-<div id="Html1" style="position:absolute;left:328px;top:890px;width:145px;height:100px;z-index:1">
+<div id="Html1" style="position:absolute;left:280px;top:681px;width:248px;height:100px;z-index:1">
 <div style="text-align: center;">
   <button id="confirmButton" onclick="redirect()">Confirm 18+</button>
 </div>
@@ -31,53 +30,6 @@
     }
   }
 </script></div>
-<div id="Html2" style="position:absolute;left:249px;top:589px;width:304px;height:301px;z-index:2">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
-    </head>
-<body>
-    <div class="container">
-        <h1></h1>
-        <input type="text" id="password" readonly>
-        <button class="button" onclick="generatePassword()">GET ACCESS PASSWORD</button>
-        <button class="button" onclick="copyPassword()">Copy Password</button>
-        <div id="notification">Password copied!</div>
-    </div>
-
-    <script>
-        function generatePassword() {
-            const length = Math.floor(Math.random() * (18 - 16 + 1)) + 16;
-            const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*()_+";
-            let password = "";
-            for (let i = 0; i < length; i++) {
-                const randomIndex = Math.floor(Math.random() * charset.length);
-                password += charset[randomIndex];
-            }
-            document.getElementById("password").value = password;
-        }
-
-        function copyPassword() {
-            const passwordField = document.getElementById("password");
-            if (passwordField.value) {
-                passwordField.select();
-                document.execCommand("copy");
-
-                const notification = document.getElementById("notification");
-                notification.style.display = "block";
-                setTimeout(() => {
-                    notification.style.display = "none";
-                }, 2000); // Show notification for 2 seconds
-            } else {
-                alert("Please generate a password first!");
-            }
-        }
-    </script>
-</body>
-</html></div>
 </div>
 </body>
 </html>
