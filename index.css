@@ -1,9 +1,21 @@
+html, body
+{
+   height: 100%;
+}
+div#space
+{
+   width: 1px;
+   height: 50%;
+   margin-bottom: -600px;
+   float:left
+}
 div#container
 {
    width: 800px;
+   height: 1200px;
+   margin: 0 auto;
    position: relative;
-   margin: 0 auto 0 auto;
-   text-align: left;
+   clear: left;
 }
 body
 {
@@ -14,7 +26,7 @@ body
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
-   text-align: center;
+   padding: 0;
 }
 #wb_Image1
 {
@@ -47,3 +59,63 @@ body
   #confirmButton:hover {
     background-color: #7CB342; /* Темнее при наведении */
   }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000; /* Set body background to black */
+        }
+        .container {
+            text-align: center;
+            background: #000; /* Set container background to black */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Slightly lighter shadow for contrast */
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #fff; /* Set title color to white */
+        }
+        #password {
+            font-size: 1.4em;
+            font-weight: 400;
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd; /* Light border */
+            border-radius: 8px;
+            width: calc(100% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+            background: #222; /* Darker background for the input */
+            color: #fff; /* White text in the input */
+        }
+        .button {
+            margin: 10px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: #ffffff;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        #notification {
+            display: none;
+            color: #28a745;
+            margin: 15px 0;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
