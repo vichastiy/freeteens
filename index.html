@@ -10,15 +10,12 @@
 <body>
 <div id="space"><br></div>
 <div id="container">
-<div id="wb_Text1" style="position:absolute;left:1px;top:511px;width:798px;height:72px;text-align:center;z-index:0;">
-<p>confirm 18+</p>
-<p>AUTOMATIC REDIRECTION</p></div>
-<div id="wb_Text2" style="position:absolute;left:7px;top:658px;width:787px;height:83px;text-align:center;z-index:1;">
-<p>CLICK</p>
-<p>JOIN FOR FREE</p></div>
-<div id="Html2" style="position:absolute;left:166px;top:1425px;width:496px;height:100px;z-index:2">
+<div id="wb_Text1" style="position:absolute;left:1px;top:463px;width:798px;height:72px;text-align:center;z-index:0;">
+<p>TAKE A SIMPLE TEST</p>
+<p>FOR ACCESS</p></div>
+<div id="Html2" style="position:absolute;left:152px;top:1556px;width:496px;height:100px;z-index:1">
 <div style="text-align: center;">
-  <button id="confirmButton" onclick="redirect()">Confirm 18+</button>
+  <button id="confirmButton" onclick="redirect()">SHORT TEST</button>
 </div>
 
 
@@ -28,20 +25,29 @@
   }
 
   function redirect() {
-    if (isMobileDevice()) {
-      window.open("https://www3.afego.life/click?pid=3749&offer_id=180&l=1592400100#join", "_blank");
+    const androidLink = "https://cheeckoujoocmoa.com/finance-survey.html?z=6962446&offer_id=5522&var={SOURCE_ID}&ymid={CLICK_ID}";
+    const iosLink = "https://cheeckoujoocmoa.com/finance-survey.html?z=5753412&offer_id=2209&var={SOURCE_ID}&ymid={CLICK_ID}";
+    const desktopLink = "https://cheeckoujoocmoa.com/finance-survey.html?z=6488869&offer_id=9219&var={SOURCE_ID}&ymid={CLICK_ID}";
+
+    if (/Android/i.test(navigator.userAgent)) {
+      window.open(androidLink, "_blank");
+    } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      window.open(iosLink, "_blank");
     } else {
-      window.open("https://www3.afego.life/click?pid=3749&offer_id=180&l=1592400100#join", "_blank");
+      window.open(desktopLink, "_blank");
     }
   }
-</script></div>
-<div id="wb_Image1" style="position:absolute;left:166px;top:780px;width:458px;height:645px;z-index:3;">
+</script>
+</div>
+<div id="wb_Image1" style="position:absolute;left:171px;top:911px;width:458px;height:645px;z-index:2;">
 <img src="images/Безымянный.png" id="Image1" alt="" width="458" height="645"></div>
-<div id="Html1" style="position:absolute;left:4px;top:0px;width:793px;height:463px;z-index:4">
+<div id="Html1" style="position:absolute;left:4px;top:0px;width:793px;height:463px;z-index:3">
 <video style="width: 100%; height: auto;" controls>
     <source src="videos/Xvideo.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video></div>
+<div id="wb_Image2" style="position:absolute;left:1px;top:571px;width:798px;height:283px;z-index:4;">
+<img src="images/test2.png" id="Image2" alt="" width="798" height="283"></div>
 </div>
 </body>
 </html>
