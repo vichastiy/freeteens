@@ -6,13 +6,13 @@ div#space
 {
    width: 1px;
    height: 50%;
-   margin-bottom: -1450px;
+   margin-bottom: -783px;
    float:left
 }
 div#container
 {
    width: 800px;
-   height: 2900px;
+   height: 1567px;
    margin: 0 auto;
    position: relative;
    clear: left;
@@ -105,59 +105,3 @@ body
   #confirmButton:hover {
     background-color: #7CB342; /* Темнее при наведении */
   }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #000;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            background: #000;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-            width: 100%;
-            max-width: 400px;
-        }
-        h1 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-        }
-        #password {
-            font-size: 1.4em;
-            margin: 15px 0;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            width: calc(100% - 20px);
-            text-align: center;
-            background: #222;
-            color: #fff;
-        }
-        .button {
-            margin: 10px;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 8px;
-            background-color: #007bff;
-            color: #ffffff;
-            font-size: 1.1em;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-        .button:hover {
-            background-color: #0056b3;
-            transform: translateY(-2px);
-        }
-        #notification {
-            display: none;
-            color: #28a745;
-            margin: 15px 0;
-            font-size: 1.2em;
-        }
-    
