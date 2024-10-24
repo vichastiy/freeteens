@@ -1,9 +1,21 @@
+html, body
+{
+   height: 100%;
+}
+div#space
+{
+   width: 1px;
+   height: 50%;
+   margin-bottom: -1450px;
+   float:left
+}
 div#container
 {
    width: 800px;
+   height: 2900px;
+   margin: 0 auto;
    position: relative;
-   margin: 0 auto 0 auto;
-   text-align: left;
+   clear: left;
 }
 body
 {
@@ -14,22 +26,7 @@ body
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
-   text-align: center;
-}
-#wb_Image1
-{
-   vertical-align: top;
-}
-#Image1
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
    padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
 }
 #wb_Text1 
 {
@@ -43,11 +40,11 @@ body
 }
 #wb_Text1
 {
-   color: #00FF00;
+   color: #FFFF00;
    font-family: Arial;
    font-weight: 400;
-   font-size: 27px;
-   line-height: 30px;
+   font-size: 21px;
+   line-height: 24.5px;
 }
 #wb_Text1 p, #wb_Text1 ul
 {
@@ -66,83 +63,22 @@ body
 }
 #wb_Text2
 {
-   color: #FFFF00;
+   color: #00FF00;
    font-family: Arial;
    font-weight: 400;
-   font-size: 24px;
-   line-height: 27.5px;
+   font-size: 27px;
+   line-height: 30px;
 }
 #wb_Text2 p, #wb_Text2 ul
 {
    margin: 0;
    padding: 0;
 }
-#wb_Text3 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text3
-{
-   color: #FFFF00;
-   font-family: Arial;
-   font-weight: 400;
-   font-size: 24px;
-   line-height: 27.5px;
-}
-#wb_Text3 p, #wb_Text3 ul
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_Image2
+#wb_Image1
 {
    vertical-align: top;
 }
-#Image2
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_Text4 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text4
-{
-   color: #FFFF00;
-   font-family: Arial;
-   font-weight: 400;
-   font-size: 21px;
-   line-height: 24.5px;
-}
-#wb_Text4 p, #wb_Text4 ul
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_Image3
-{
-   vertical-align: top;
-}
-#Image3
+#Image1
 {
    border: 0px solid #000000;
    border-radius: 0px;
@@ -169,19 +105,59 @@ body
   #confirmButton:hover {
     background-color: #7CB342; /* Темнее при наведении */
   }
-  #confirmButton {
-    background-color: #08C911; /* Салатовый цвет */
-    color: white;
-    border: none;
-    border-radius: 20px; /* Закругленные углы */
-    padding: 20px 30px; /* Увеличенный внутренний отступ */
-    font-size: 32px;
-    font-weight: bold; /* Жирный шрифт */
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 400px; /* Установите ширину кнопки */
-  }
-
-  #confirmButton:hover {
-    background-color: #7CB342; /* Темнее при наведении */
-  }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: #000;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        #password {
+            font-size: 1.4em;
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: calc(100% - 20px);
+            text-align: center;
+            background: #222;
+            color: #fff;
+        }
+        .button {
+            margin: 10px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: #ffffff;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        #notification {
+            display: none;
+            color: #28a745;
+            margin: 15px 0;
+            font-size: 1.2em;
+        }
+    

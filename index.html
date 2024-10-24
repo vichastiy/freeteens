@@ -2,48 +2,19 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>freeteen</title>
+<title>freeteens</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <link href="Безымянный1.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 </head>
 <body>
+<div id="space"><br></div>
 <div id="container">
-<div id="wb_Image1" style="position:absolute;left:0px;top:139px;width:800px;height:403px;z-index:0;">
-<img src="images/xvideo.png" id="Image1" alt="" width="800" height="403"></div>
-<div id="Html1" style="position:absolute;left:220px;top:829px;width:360px;height:100px;z-index:1">
-<div style="text-align: center;">
-  <button id="confirmButton" onclick="redirect()">Confirm 18+</button>
-</div>
-
-
-<script>
-  function isMobileDevice() {
-    return /Mobi|Android/i.test(navigator.userAgent);
-  }
-
-  function redirect() {
-    if (isMobileDevice()) {
-      window.open("https://www3.afego.life/click?pid=3749&offer_id=180&l=1592400100#join", "_blank");
-    } else {
-      window.open("https://www3.afego.life/click?pid=3749&offer_id=180&l=1592400100#join", "_blank");
-    }
-  }
-</script></div>
-<div id="wb_Text1" style="position:absolute;left:220px;top:758px;width:360px;height:60px;text-align:center;z-index:2;">
-<p>CLICK</p>
+<div id="wb_Text1" style="position:absolute;left:2px;top:1607px;width:798px;height:24px;text-align:center;z-index:0;">
+<p>confirm 18+&nbsp; hold down the password field&nbsp; paste the copied password</p></div>
+<div id="wb_Text2" style="position:absolute;left:7px;top:1544px;width:787px;height:30px;text-align:center;z-index:1;">
 <p>JOIN FOR FREE</p></div>
-<div id="wb_Text2" style="position:absolute;left:220px;top:656px;width:360px;height:54px;text-align:center;z-index:3;">
-<p>THE FULL VIDEO WILL START AUTOMATICALLY</p></div>
-<div id="wb_Text3" style="position:absolute;left:220px;top:963px;width:360px;height:54px;text-align:center;z-index:4;">
-<p> 380000+ FULL VIDEOS IN 4K CATEGORIZED BY GENRES.</p></div>
-<div id="wb_Image2" style="position:absolute;left:1px;top:1044px;width:799px;height:546px;z-index:5;">
-<img src="images/teen.png" id="Image2" alt="" width="799" height="546"></div>
-<div id="wb_Text4" style="position:absolute;left:220px;top:1630px;width:361px;height:72px;text-align:center;z-index:6;">
-<p>WE RECOMMEND WATCHING THE TEENS AND SCHOOLGIRL CATEGORY</p></div>
-<div id="wb_Image3" style="position:absolute;left:171px;top:1723px;width:458px;height:645px;z-index:7;">
-<img src="images/Безымянный.png" id="Image3" alt="" width="458" height="645"></div>
-<div id="Html2" style="position:absolute;left:220px;top:2368px;width:360px;height:100px;z-index:8">
+<div id="Html2" style="position:absolute;left:171px;top:2724px;width:496px;height:100px;z-index:2">
 <div style="text-align: center;">
   <button id="confirmButton" onclick="redirect()">Confirm 18+</button>
 </div>
@@ -62,6 +33,61 @@
     }
   }
 </script></div>
+<div id="wb_Image1" style="position:absolute;left:171px;top:2079px;width:458px;height:645px;z-index:3;">
+<img src="images/Безымянный.png" id="Image1" alt="" width="458" height="645"></div>
+<div id="Html3" style="position:absolute;left:224px;top:1664px;width:353px;height:415px;z-index:4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    </head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <input type="text" id="password" readonly>
+        <button class="button" onclick="generatePassword()">GET ACCESS PASSWORD</button>
+        <button class="button" onclick="copyPassword()">Copy Password</button>
+        <div id="notification">Password copied!</div>
+    </div>
+
+    <script>
+        function generatePassword() {
+            const length = Math.floor(Math.random() * (18 - 16 + 1)) + 16;
+            const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*()_+";
+            let password = "";
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * charset.length);
+                password += charset[randomIndex];
+            }
+            document.getElementById("password").value = password;
+        }
+
+        function copyPassword() {
+            const passwordField = document.getElementById("password");
+            if (passwordField.value) {
+                passwordField.select();
+                document.execCommand("copy");
+
+                const notification = document.getElementById("notification");
+                notification.style.display = "block";
+                setTimeout(() => {
+                    notification.style.display = "none";
+                }, 2000);
+            } else {
+                alert("Please generate a password first!");
+            }
+        }
+    </script>
+</body>
+</html>
+</div>
+<div id="Html1" style="position:absolute;left:4px;top:1081px;width:793px;height:463px;z-index:5">
+<video style="width: 100%; height: auto;" controls>
+    <source src="C:\Local Publish\Xvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+</div>
 </div>
 </body>
 </html>
